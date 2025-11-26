@@ -30,7 +30,8 @@ section.has-dark-background h6 {
     --r-background-color: #000000;
     --r-main-font: "Raleway", sans-serif;
     --r-line-color: #6fa8dc;
-    --r-main-font-size: 1.2rem;
+    --r-other-color: #e2a854;
+    --r-main-font-size: 1.4vw;
     --r-main-font-weight: extra-light;
     --r-main-color: #ffffff;
     --r-block-margin: 2px;
@@ -43,15 +44,17 @@ section.has-dark-background h6 {
     --r-heading-text-shadow: none;
     --r-heading-font-weight: 600;
     --r-heading1-text-shadow: none;
-    --r-heading1-size: 2.2rem;
-    --r-heading2-size: 2.2rem;
-    --r-heading3-size: 1.5rem;
-    --r-heading4-size: 4rem;
+    --r-heading1-size: 4vh;
+    --r-heading2-size: 4vh;
+    --r-heading3-size: 1.5vh;
+    --r-heading4-size: 4vh;
     --r-code-font: monospace;
-    --r-link-color: #6fa8dc;
+    /* --r-link-color: #e2a854; */
+    --r-link-color: white;
     --r-link-color-dark: #6fa8dc;
-    --r-link-color-hover: rgba(111, 167, 220, 0);
+    --r-link-color-hover: white;
     --r-selection-background-color: #98bdef;
+
     --r-selection-color: #fff;
 }
 
@@ -88,16 +91,8 @@ figcaption{
     color: var(--r-line-color);
 }
 
-.reveal .color_0 {
-    color: #517b77;
-}
-
-.reveal .color_1 {
-    color: #caa000;
-}
-
-.reveal .color_2 {
-    color: #f66000;
+.reveal .color-0 {
+    color: var(--r-other-color);
 }
 
 .reveal-viewport {
@@ -124,11 +119,11 @@ figcaption{
     text-shadow: none;
 }
 
-.reveal .slides section,
+/* .reveal .slides section,
 .reveal .slides section > section {
     line-height: 1.3;
     /* font-weight: 100 !important; */
-}
+} */
 
 /*********************************************
 * HEADERS
@@ -136,7 +131,6 @@ figcaption{
 .reveal h1,
 .reveal h2,
 .reveal h3,
-.reveal h4,
 .reveal h5,
 .reveal h6 {
     margin: var(--r-heading-margin);
@@ -153,18 +147,19 @@ figcaption{
 
 .reveal h1 {
     font-size: var(--r-heading1-size) !important;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: var(--r-line-color) 3px solid;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    border-bottom: var(--r-line-color) 4px solid;
     text-align: center;
 }
 
 .quarto-title-authors{
     display: block !important;
-    font-size: 3rem !important;
+    padding-top: 2vh;
+    font-size: 4vh !important;
     font-family: "Raleway", sans-serif;
     text-align: left !important;
-    color: #e2a854;
+    color: var(--r-other-color);
     text-transform: none;
     font-weight: 100 !important;
 }
@@ -175,7 +170,7 @@ figcaption{
 }
 
 .date{
-    font-size: 2rem !important;
+    font-size: 3vh !important;
     font-family: "Raleway", sans-serif;
     text-align: left !important;
     text-transform: none;
@@ -183,13 +178,13 @@ figcaption{
 }
 
 h1.title {
-    font-size: 3rem !important;
+    font-size: 4vh!important;
     text-align: left;
     color: white;
     text-transform: none;
     margin-bottom: 0;
     font-weight: 500;
-    border-bottom: #6fa8dc 2px solid;
+    border-bottom: #6fa8dc 0.3vh solid;
 }
 
 p.subtitle {
@@ -201,12 +196,16 @@ p.subtitle {
     font-size: var(--r-heading2-size);
     font-weight: normal;
     color: var(--r-heading-color);
-    margin-bottom: 40px;
+    margin-bottom: 4vh;
     text-align: left;
 }
 
 .reveal span {
-    color: #6fa8dc;
+    color: var(--r-line-color)
+}
+
+.reveal .math {
+    color: var(--r-main-color);
 }
 
 .reveal hr {
@@ -225,6 +224,8 @@ p.subtitle {
 
 .reveal h4 {
     font-size: var(--r-heading4-size);
+    font-family: var(--r-main-font);
+    font-weight: 200 !important;
 }
 
 .reveal h1 {
@@ -236,7 +237,7 @@ p.subtitle {
 *********************************************/
 .reveal p {
     margin: var(--r-block-margin) 0;
-    line-height: 1.3;
+    line-height: 4vh;
 }
 
 /* Remove trailing margins after titles */
@@ -259,13 +260,17 @@ p.subtitle {
 
 .reveal strong,
 .reveal b {
-    font-size: 1.5rem;
+    font-size: var(--r-main-font-size);
     font-weight: normal;
-    font-family: var(--r-heading-font);
+    /* font-family: var(--r-heading-font); */
     font-weight: medium;
-    color: #e2a854;
+    /* color: #e2a854; */
 }
 
+.reveal .footer
+{
+    font-size: 2vh !important;
+}
 .reveal em {
     font-style: italic;
 }
@@ -275,19 +280,19 @@ p.subtitle {
 .reveal ul {
     display: inline-block;
     text-align: left;
-    margin: 0 0 0 1em;
+    margin: 0 0 0 1vw;
 }
 
 .reveal ol {
     list-style-type: decimal;
 }
 
-/* .reveal ul {
-list-style-type: disc;
-} */
+.reveal ul {
+    list-style-type: square;
+}
 
 .reveal ul li {
-    margin: 0 20px 20px 0;
+    margin: 0 4vw 4vw 0;
 }
 
 /* .reveal ul ul {
@@ -298,7 +303,7 @@ list-style-type: square;
 list-style-type: circle;
 } */
 
-.reveal ul.myclass {
+/* .reveal ul.myclass {
     list-style-type: none;
     font-size: 13px;
 }
@@ -319,7 +324,7 @@ list-style-type: circle;
 
 .reveal .caveat {
     font-family: caveat;
-}
+} */
 
 .reveal ul ul,
 .reveal ul ol,
@@ -465,7 +470,7 @@ border-bottom: none;
 }
 
 .reveal .roll span:after {
-    color: #fff;
+
     background: var(--r-link-color-dark);
 }
 
@@ -496,16 +501,18 @@ border-bottom: none;
 * NAVIGATION CONTROLS
 *********************************************/
 .reveal .controls-arrow {
-    color: var(--r-link-color);
+    color: var(--r-line-color);
 }
 
 /*********************************************
 * PROGRESS BAR
 *********************************************/
 .reveal .progress {
-    height: 5px;
-    background: rgba(0, 0, 0, 0.2);
-    color: var(--r-link-color);
+    height: 0.2vh;
+    /* background: rgba(0, 0, 0, 0.2); */
+    /* color: var(--r-line-color); */
+    color: #6fa8dc !important;
+    /* background: var(--r-line-color); */
 }
 
 /*********************************************
@@ -519,11 +526,20 @@ border-bottom: none;
 
 .reveal .slide-logo
 {
-    margin-right: 30px;
-  height: 200px !important;
-  width: 200px !important;
+    margin-right: 5vh;
+  height: 10vh !important;
+  width: 10vh !important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+.img-full-height {
+    height: 100% !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
 }
 /* .slide-title
 {
@@ -588,36 +604,56 @@ margin-top: -50px;
     color: var(--r-line-color);
 }
 
-.reveal span.interval_symb {
-    font-family: Oswald;
-    font-size: 50px;
-    color: #527b77;
+.video-responsive-20{
+    height: 20vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-.reveal span.interval_bound {
-    font-family: Oswald;
-    font-size: 50px;
-    color: #c9a008;
+.video-responsive-30{
+    height: 30vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-.reveal span.interval_offset {
-    font-family: Oswald;
-    font-size: 50px;
-    color: #f46000;
+.video-responsive-35{
+    height: 35vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-.reveal span.interval_step {
-    font-family: Oswald;
-    font-size: 50px;
-    color: var(--r-main-color);
+.video-responsive-40{
+    height: 40vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
-.reveal .subtitle
+.video-responsive-25{
+    height: 25vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.video-responsive-5{
+    height: 3vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.video-responsive-10{
+    height: 10vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.small-lh p
 {
-    font-size: 14px;
-    text-align: center !important;
-}
-
-.hide{
-color: var(--r-background-color);
+    line-height:  1.5vh;
 }
