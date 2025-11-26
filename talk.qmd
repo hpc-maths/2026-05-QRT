@@ -2,7 +2,7 @@
 title: "HPC@Maths : Un modèle inédit pour accélérer la recherche et ses applications"
 author:
   name: Loïc Gouarin, Marc Massot
-date: 27 septembre 2025
+date: 4 décembre 2025
 date-format: long
 keep-tex: true
 lang: fr
@@ -28,7 +28,7 @@ resources:
   - videos/**
   - css/fonts/**
 highlight-style: github
-footer: Anniversaire de promotions <img class="video-responsive-5" src="figures/by-sa.png"/> 27 septembre 2025
+footer: masterclass QRT <img class="video-responsive-5" src="figures/by-sa.png"/> 4 décembre 2025
 ---
 
 <!-- ::: {.hidden}
