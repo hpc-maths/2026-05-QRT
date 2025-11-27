@@ -1,5 +1,6 @@
 ---
-title: "HPC@Maths : Un modèle inédit pour accélérer la recherche et ses applications"
+title: "Mathématiques appliquées et calcul haute performance"
+subtitle: "au cœur de l’innovation scientifique et technologique"
 author:
   name: Loïc Gouarin, Marc Massot
 date: 4 december 2025
