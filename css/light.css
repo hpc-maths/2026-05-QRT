@@ -188,7 +188,9 @@ h1.title {
 }
 
 p.subtitle {
-    font-size: 1.4rem !important;
+    padding-top: 1vh;
+    text-align: left;
+    font-size: 3vh!important;
     font-style: italic;
 }
 
