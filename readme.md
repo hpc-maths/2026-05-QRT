@@ -1,0 +1,1 @@
+slide: https://hpc-maths.github.io/2026-05-QRT/
