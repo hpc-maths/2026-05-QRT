@@ -1,12 +1,12 @@
 ---
-title: "Mathématiques appliquées et calcul haute performance"
-subtitle: "au cœur de l’innovation scientifique et technologique"
+title: "Applied Mathematics and High Performance Computing"
+subtitle: "at the heart of scientific and technological innovation"
 author:
   name: Loïc Gouarin, Marc Massot
 date: 4 december 2025
 date-format: long
 keep-tex: true
-lang: fr
+lang: en
 format:
   revealjs:
     css: css/light.css
@@ -29,7 +29,7 @@ resources:
   - videos/**
   - css/fonts/**
 highlight-style: github
-footer: masterclass QRT <img class="video-responsive-5" src="figures/by-sa.png"/> 4 décembre   2025
+footer: QRT masterclass <img class="video-responsive-5" src="figures/by-sa.png"/> December 4, 2025
 ---
 
 <!-- ::: {.hidden}
@@ -46,17 +46,17 @@ footer: masterclass QRT <img class="video-responsive-5" src="figures/by-sa.png"/
 ::::{.center-page-vertically-2}
 :::{.row}
 ::::{.col-8 .text-center }
-![](figures/hpc-explain.svg){width="60%"}
+![](figures/hpc-explain.png){width="60%"}
 ::::
 ::::{.col-4 .align-self-center .border .fragment .border-2}
 
 :::{.color-0}
-**Plan**
+**Outline**
 :::
 
-- Évolution des architectures, des mathématiques et des algorithmes
-- Innovation scientifique et technologique : illustrations
-- L’Initiative HPC@Maths et son impact à l’X
+- Evolution of architectures, mathematics, and algorithms
+- Scientific and technological innovation: illustrations
+- The HPC@Maths Initiative and its impact at l'X
 
 ::::
 
@@ -65,7 +65,7 @@ footer: masterclass QRT <img class="video-responsive-5" src="figures/by-sa.png"/
 ---
 
 :::{.center-page}
-![](figures/timeline.png)
+![](figures/timeline_light.png)
 :::
 
 ---
@@ -89,19 +89,19 @@ footer: masterclass QRT <img class="video-responsive-5" src="figures/by-sa.png"/
 ::::
 ::::{.col .align-self-center}
 
-**Une complexité à tous les étages**
+**Complexity at every level**
 
 - SIMD
 - NUMA-aware
-- Carte accélératrice (GPU, FPGA, …)
-- Noeuds de calcul interconnectés
+- Accelerator cards (GPU, FPGA, …)
+- Interconnected compute nodes
 
 :::{.text-center .color-0}
-**Mémoire non unifiée**
+**Non-unified memory**
 :::
 
 <br>
-**Une grande variété d’outils**
+**A wide variety of tools**
 
 - OpenMP
 - Cuda
@@ -127,34 +127,34 @@ footer: masterclass QRT <img class="video-responsive-5" src="figures/by-sa.png"/
 :::
 
 :::{.col-6 .p-5}
-Il est maintenant indispensable de connaître l’ensemble des composants et leurs interactions pour tirer partie des ressources mises à disposition.
+It is now essential to understand all components and their interactions to take full advantage of the resources made available.
 
-L’expertise demandée est devenue complexe et les choix nombreux.
+The required expertise has become complex and the choices numerous.
 :::
 ::::
 
-## Evolution des méthodes mathématiques
+## Evolution of mathematical methods
 
 :::{.row}
 ::::{.col}
-**Progression parallèle à la loi de Moore**
+**Parallel progression to Moore's Law**
 
-- Un exemple : résolution de système linéaires creux
-- Illustration issue d’une réflexion de la société SIAM en 2001 sur le domaine émergeant “Computational Science and Engineering”
-- Valable jusque vers 2005 puis saturation progressive sur les sujets “classiques” de la discipline
+- An example: solving sparse linear systems
+- Illustration from a SIAM society reflection in 2001 on the emerging field of "Computational Science and Engineering"
+- Valid until around 2005, then gradual saturation on "classical" topics in the discipline
 
 :::{.fragment fragment-index=0}
-**Emergence de nouvelles approches**
+**Emergence of new approaches**
 
-- Depuis 2010 changements de paradigmes et solutions innovantes en analyse numérique → ruptures
-- HPC : simuler des problèmes de tailles importante sur des architectures classiques (génie biomédical)
-- Exemple : adaptation en temps et en espace (sép. d’opérateur pour intégrer la dynamique en temps) et contrôle d’erreur
+- Since 2010, paradigm shifts and innovative solutions in numerical analysis → breakthroughs
+- HPC: simulating large-scale problems on classical architectures (biomedical engineering)
+- Example: time and space adaptation (operator splitting to integrate time dynamics) and error control
 :::
 
 <br>
 
 :::{.fragment .text-center .color-0 fragment-index=0}
-**Passage à un nouveau chapitre de l’analyse numérique depuis 2010 **
+**Transition to a new chapter of numerical analysis since 2010**
 :::
 
 ::::
@@ -175,16 +175,16 @@ L’expertise demandée est devenue complexe et les choix nombreux.
 :::::{.center-page-vertically-2}
 :::{.row}
 ::::{.col-7 .align-self-center}
-Se situe à l’interconnection entre :
+Lies at the intersection of:
 
 ::: {.nonincremental}
-- Contribution aux nouvelles approches mathématiques, émergence
+- Contribution to new mathematical approaches, emergence
 :::
 ::: {.nonincremental}
-- Nouvelles architectures de calcul et techniques d’implémentation
+- New computing architectures and implementation techniques
 :::
 ::: {.fragment fragment-index=1}
-- **Enjeux de l’innovation scientifique et technologique = réseau de collab. avec d’autres disciplines et entreprises**
+- **Challenges of scientific and technological innovation = network of collaborations with other disciplines and companies**
 :::
 ::::
 ::::{.col}
@@ -208,28 +208,28 @@ Se situe à l’interconnection entre :
 ::::
 ::::{.col .align-self-center .p-4 .border}
 
-:::{.text-center .color-0 .h1 .display-5}
-Écoulements diphasiques multi-échelles
+:::{.text-center .color-0 .h1 .display-6}
+Multi-scale two-phase flows
 :::
 
 </br>
 
 :::{.text-center  .color}
-**Simulation prédictive des phénomènes physiques**
+**Predictive simulation of physical phenomena**
 
-**sur les nouvelles architectures de calcul**
+**on new computing architectures**
 :::
 
 </br>
 
-- Modélisation mathématique innovante
-- Méthodes numériques de nouvelle génération
-- Développement de code de calcul open-source efficace
+- Innovative mathematical modeling
+- Next-generation numerical methods
+- Development of efficient open-source computational codes
 
 </br>
 
-:::{.text-center .color-0 .h1 .display-5}
-Conception - sécurité - efficacité
+:::{.text-center .color-0 .h1 .display-6}
+Design - safety - efficiency
 :::
 
 ::::
@@ -244,32 +244,32 @@ Conception - sécurité - efficacité
 ---
 
 :::{.center-page}
-![Source : Prof. T. Bowman - Stanford Univ.](figures/diphasique_1.png){width=60%}
+![Source: Prof. T. Bowman - Stanford Univ.](figures/diphasique_1.png){width=60%}
 :::
 
-## Brouillard de gouttelettes : traité !
+## Droplet spray: solved!
 
 :::::{.center-page-vertically-2}
 :::{.row .align-items-center}
 ::::{.col-8 }
-**Brouillards de gouttes polydispersés**
+**Polydisperse droplet sprays**
 
-- Simulation prédictive de la dynamique des brouillards et de leur évaporation → Structure et dynamique de flamme
+- Predictive simulation of spray dynamics and evaporation → Flame structure and dynamics
 
 :::{.color}
 **Combustion**
 :::
 
-- Propulsion liquide, solide, Booster Ariane : couplage combustion / acoustique / brouillard polydispersé (instab. thermo-acoustiques)
+- Liquid propulsion, solid propulsion, Ariane Booster: combustion / acoustics / polydisperse spray coupling (thermo-acoustic instabilities)
 
-**Turbulence gaz-gouttes fortement couplée**
+**Strongly coupled gas-droplet turbulence**
 
-- Nouvelle approche aux grandes échelles - ondelettes à divergence nulle
+- New large-scale approach - divergence-free wavelets
 
 </br>
 
-:::{.text-center .color-0 .h1}
-Nouvelle génération de modèles fluides et méthodes numériques précises et efficaces - HPC
+:::{.text-center .color-0 .h2}
+New generation of fluid models and accurate and efficient numerical methods - HPC
 :::
 
 ::::
@@ -294,34 +294,34 @@ Nouvelle génération de modèles fluides et méthodes numériques précises et 
 :::
 :::::
 
-## Atomisation - modèle unifié - rupture !
+## Atomization - unified model - breakthrough!
 
 :::::{.center-page-vertically-2}
 :::{.row}
 ::::{.col .border .align-self-center}
 
 :::{.text-center}
-**Modèles classiques**
+**Classical models**
 :::
 
 </br>
 
-Régime ***phases séparées***
+***Separated phases*** regime
 
-- Modèles eulériens de mélange bi-fluide avec fraction volumique $\alpha$
-- Faible information sur la géométrie de l’interface ($\alpha$, $\nabla \alpha$) - maillage
+- Bi-fluid Eulerian mixture models with volume fraction $\alpha$
+- Limited information on interface geometry ($\alpha$, $\nabla \alpha$) - mesh
 
 </br>
 
-Régime ***phases dispersées***
+***Dispersed phases*** regime
 
-- Modèles eulériens aux moments
-- Haute information sur la géométrie de l’interface avec la distribution en taille de gouttelettes ($\alpha$, $\Sigma$, $H$, $G$)
+- Eulerian moment models
+- High information on interface geometry with droplet size distribution ($\alpha$, $\Sigma$, $H$, $G$)
 
 </br>
 
 :::{.color-0}
-**Thèse A. Loison, W. Haegeman**
+**PhD A. Loison, W. Haegeman**
 
 **Post-doc G. Orlando**
 :::
@@ -335,28 +335,28 @@ Régime ***phases dispersées***
 ::::{.col .border .align-self-center}
 
 :::{.text-center .color-0}
-**Modèle unifié à deux échelles**
+**Two-scale unified model**
 :::
 
 </br>
 
 :::{.border .p-1}
 ::::{.color-0}
-***Grande échelle***
+***Large scale***
 ::::
 
-- Modèles eulériens de mélange bi-fluide toute topologie avec fraction volumique $\alpha$
+- Eulerian bi-fluid mixture models for all topologies with volume fraction $\alpha$
 :::
 
 </br>
 
 :::{.text-center .fs-3 .border .rounded-pill }
-Transfert inter-échelle
+Inter-scale transfer
 
 ::::{.fs-5 .small-lh}
-Atomisation primaire, coalescence
+Primary atomization, coalescence
 
-géométrie de l’interface via ($\alpha$, $\nabla \alpha$)
+Interface geometry via ($\alpha$, $\nabla \alpha$)
 ::::
 :::
 
@@ -364,19 +364,19 @@ géométrie de l’interface via ($\alpha$, $\nabla \alpha$)
 
 :::{.border .p-1 .m-2}
 ::::{.color-0}
-***Petite échelle***
+***Small scale***
 ::::
 
-Modèle de gouttelettes oscillantes base sur  ($\alpha^d$, $\Sigma$, $H$, $G$ + variables dynamiques)
+Oscillating droplet model based on ($\alpha^d$, $\Sigma$, $H$, $G$ + dynamic variables)
 
-- Géométrie différentielle / modèles cinétiques
+- Differential geometry / kinetic models
 :::
 ::::
 :::
 :::::
 <!-- {{< include diphasique.qmd >}} -->
 
-## Atomisation - modèle unifié - simulation
+## Atomization - unified model - simulation
 
 :::{.text-center}
 <video class="video-responsive-40" data-autoplay loop src="videos/large_scale_small_scale_adaptive_contours.mp4" />
@@ -386,29 +386,29 @@ Modèle de gouttelettes oscillantes base sur  ($\alpha^d$, $\Sigma$, $H$, $G$ + 
 <video class="video-responsive-40" data-autoplay loop src="videos/large_scale_small_scale_adaptive_finale.mp4"/>
 :::
 
-## Méthode Boltzmann sur réseau
+## Lattice Boltzmann Method
 
 :::{.row}
 ::::{.col-8}
-**Contexte**
+**Context**
 
-- Simulation haute performance du bruit d’un train d'atterrissage (NASA Ames Advanced Supercomputing Division - Launch Ascent and Vehicle Aerodynamics LAVA) 2,28 milliards de degrés de liberté - 12 niveaux
-- Simulation sur machine Pleiades (2800 coeurs - deux semaines) Accélération d’un facteur 15 par rapport aux techniques classiques
+- High-performance simulation of landing gear noise (NASA Ames Advanced Supercomputing Division - Launch Ascent and Vehicle Aerodynamics LAVA) 2.28 billion degrees of freedom - 12 levels
+- Simulation on Pleiades machine (2800 cores - two weeks) Acceleration by a factor of 15 compared to classical techniques
 
-**Rupture : Thèse Thomas Bellotti **
+**Breakthrough: PhD Thomas Bellotti**
 
-- Analyse numérique des méthodes (consistance / stabilité)
-- Implémentation dans samurai : résolution de plusieurs décades de questions qui se posaient sur l’utilisation de maillages adaptés
+- Numerical analysis of methods (consistency / stability)
+- Implementation in samurai: resolution of several decades of questions regarding the use of adaptive meshes
 
 </br>
 
 :::{.text-center .color-0}
-**Rupture et innovation : simulation plus précise et plus performante**
+**Breakthrough and innovation: more accurate and more efficient simulation**
 :::
 
 </br>
 
-Prix de thèse Paul Caseau 2024 Académie des Technologies / Prix de thèse de la Société de Mathématiques Appliquées et Industrielles GAMNI 2024
+Paul Caseau Thesis Prize 2024 Académie des Technologies / PhD Thesis Prize from the Société de Mathématiques Appliquées et Industrielles GAMNI 2024
 
 ::::
 ::::{.col .text-center .align-self-center}
@@ -439,28 +439,28 @@ Prix de thèse Paul Caseau 2024 Académie des Technologies / Prix de thèse de l
 
 :::{.row}
 ::::{.col-8}
-**Outil pour un ensemble d’applications**
+**Tool for a range of applications**
 
-- Physique des plasmas (propulsion électrique, prédiction du temps solaire, electron transpiration cooling…)
-- Écoulements diphasiques (propulsion liquide, propulsion aéronautique, moteurs à injection directe, chasse au lancement d’un missile)
-- Simulation numérique directe des piles au lithium
+- Plasma physics (electric propulsion, space weather prediction, electron transpiration cooling…)
+- Two-phase flows (liquid propulsion, aeronautical propulsion, direct injection engines, missile launch plume)
+- Direct numerical simulation of lithium batteries
 
 <br>
 
 **Innovation**
 
-- Nouvelle structure de données basée sur une algèbre d’ensembles
-- Facilité d'implémentation de nouveaux schémas (indépendant de la gestion dynamique du maillage) permettant de créer un écosystème pour les applications
+- New data structure based on set algebra
+- Ease of implementing new schemes (independent of dynamic mesh management) enabling the creation of an ecosystem for applications
 
 <br>
 <br>
 
 :::{.text-center .color-0}
-**Code communautaire Open Source**
+**Open Source community code**
 
 [https://github.com/hpc-maths/samurai](https://github.com/hpc-maths/samurai)
 
-**Même code pour les deux applications présentées**
+**Same code for both presented applications**
 :::
 
 ::::
@@ -506,29 +506,29 @@ Prix de thèse Paul Caseau 2024 Académie des Technologies / Prix de thèse de l
 ## HPC@Maths
 
 :::{.center-page}
-![](figures/actions.svg){width=80%}
+![](figures/actions.png){width=80%}
 
 <br>
 
 ::::{.color-0}
-**Mise en place depuis 2017 avec l’aide de la Fondation de l’X**
+**Established since 2017 with the support of the Fondation de l'X**
 
-**Impact important sur l’écosystème enseignement-recherche à l’X**
+**Significant impact on the teaching-research ecosystem at l'X**
 ::::
 :::
 
-## Mésocentre de Calcul et de données {data-background-image="figures/serveurs.png" data-background-position="right" data-background-size="40%"}
+## Computing and Data Mesocenter {data-background-image="figures/serveurs.png" data-background-position="right" data-background-size="40%"}
 
-**Ecole polytechnique - IP Paris**
+**École polytechnique - IP Paris**
 
 ::::{.center-page-vertically-2}
 :::{.row}
 ::::{.col-6 .align-self-center}
-- Opérationnel depuis l'été 2021
-- 2000 coeurs de calcul pour la communauté des laboratoires initiateurs
-- Montée en puissance à 3000 coeurs et nouveaux partenaires
-- Communauté autour des méthodes numériques de nouvelle génération et leur implémentation
-- “Computational Science” - Collaboration interdisciplinaire
+- Operational since summer 2021
+- 2000 compute cores for the community of founding laboratories
+- Scaling up to 3000 cores and new partners
+- Community around next-generation numerical methods and their implementation
+- "Computational Science" - Interdisciplinary collaboration
 ::::
 :::
 ::::
@@ -539,37 +539,37 @@ Prix de thèse Paul Caseau 2024 Académie des Technologies / Prix de thèse de l
 ::::{.col}
 ::::
 ::::{.col-7}
-<h2>Création de l’Unité de Service IDCS</h2>
+<h2>Creation of the IDCS Service Unit</h2>
 
-- Créée en mai 2020 à l’École polytechnique
-- Inspirée de ce qui se fait dans les grandes universités (Stanford, EPFL)
-- Ensemble d’ingénieurs ASR et CALCUL en soutien aux grands projets d’infrastructures informatiques de l’École et IP Paris
-- Réactivité sur évolution des infrastructures et Data Center - Soutien à la communauté
-- Vocation à devenir une Unité d’Appui à la Recherche (CNRS)
+- Created in May 2020 at École polytechnique
+- Inspired by what is done in major universities (Stanford, EPFL)
+- Team of ASR and COMPUTING engineers supporting major IT infrastructure projects of the School and IP Paris
+- Responsiveness to infrastructure and Data Center evolution - Support for the community
+- Vocation to become a Research Support Unit (CNRS)
 
 <br>
 
 :::{.text-center .mt-5 .color-0}
-**Effort important mené avec succès sur ces réalisations**
+**Significant effort carried out successfully on these achievements**
 
-**avec un fort soutien de l’École polytechnique / IPP**
+**with strong support from École polytechnique / IPP**
 
 <br>
 
-**Initiative HPC@Maths a eu un rôle clef**
+**The HPC@Maths Initiative has played a key role**
 :::
 ::::
 :::
 
-## Enseignement
+## Teaching
 
 :::{.center-page}
-![](figures/parcours.svg){width=90%}
+![](figures/parcours.png){width=90%}
 
 <br>
 
 ::::{.color-0}
-**Formation mise en place - interaction avec PME & Développement Pédagogie**
+**Training program established - interaction with SMEs & Pedagogy Development**
 ::::
 :::
 
@@ -578,45 +578,45 @@ Prix de thèse Paul Caseau 2024 Académie des Technologies / Prix de thèse de l
 
 :::{.row}
 ::::{.col-7 .align-self-center}
-**Positionnement pertinent au coeur de l’innovation**
+**Relevant positioning at the heart of innovation**
 
-- Expertise Mathématique (CMAP)
-- Expertise Informatique (Groupe d’ingénieurs de recherche experts en calcul - développeurs)
-- Réseau de collaborations sur les divers axes scientifiques et entreprises
-- Production de logiciels open-source
+- Mathematical expertise (CMAP)
+- Computing expertise (Group of expert research engineers in computing - developers)
+- Network of collaborations across various scientific axes and companies
+- Production of open-source software
 
-**Création d’un écosystème - École et IP Paris**
+**Creation of an ecosystem - School and IP Paris**
 
-**Projet en forte progression**
+**Project in strong progress**
 ::::
 ::::{.col}
 ![](figures/logiciel.png){width=80%}
 ::::
 :::
 :::{.text-center .color-0 .align-self-end .mt-5}
-**Rendu possible grâce au soutien de la Fondation**
+**Made possible thanks to the support of the Fondation**
 :::
 
-## Remerciements
+## Acknowledgments
 
-**Etudiants, ingénieurs et collaborateurs**
+**Students, engineers, and collaborators**
 
-- Doctorants et post-doctorants
-- Ingénieurs Calcul, Valorisation et Project Manager
-- Collaborateurs au sein du CMAP et ailleurs
-- Collaborateurs industriels, PME, startup
+- PhD students and post-doctoral researchers
+- Computing, Valorization, and Project Manager engineers
+- Collaborators within CMAP and elsewhere
+- Industrial collaborators, SMEs, startups
 
-**Ecole polytechnique - IP Paris**
+**École polytechnique - IP Paris**
 
 - CMAP
-- Unité IDCS
-- Pôle teaching and learning center
+- IDCS Unit
+- Teaching and learning center hub
 
-**Fondation de l’X**
+**Fondation de l'X**
 
-- Direction de campagne
-- Toute l’équipe de la Fondation
-- Grand donateur pour son écoute, son soutien et ses conseils
+- Campaign direction
+- The entire Fondation team
+- Major donor for their listening, support, and advice
 
 ##
 
@@ -626,7 +626,7 @@ Prix de thèse Paul Caseau 2024 Académie des Technologies / Prix de thèse de l
 <br>
 <br>
 
-<h4>Merci pour votre attention</h4>
+<h4>Thank you for your attention</h4>
 
 <br>
 [HPC@Maths](https://initiative-hpc-maths.gitlab.labos.polytechnique.fr/site/)
